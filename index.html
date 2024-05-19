@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek | Challenge</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--!Titulo cabecera-->
+    <header class="container-cabecera container">
+      <div class="container-alura">
+        <img src="./img/image 1.png" alt="hearts" />
+        <h1 class="titulo">AluraGeek</h1>
+      </div>
+    </header>
+    <!--!Body principal-->
+
+    <!--*Left "Mis productos"-->
+    <main class="container-main grid-container">
+      <section class="container-productos grid">
+        <h2 class="titulo-productos">Mis productos:</h2>
+        <ul class="container-productos" alt="Productos" data-lista></ul>
+      </section>
+
+      <!--*Right "Agregar productos"-->
+      <section class="container-agregar-producto grid">
+        <h2 class="titulo-productos">Agregar <br />producto:</h2>
+        <form action="" class="container-formulario" data-formulario>
+          <div class="container-input">
+            <input
+              type="text"
+              class="input-producto"
+              placeholder="nombre..."
+              data-nombre
+            />
+            <input
+              type="number"
+              class="input-producto"
+              placeholder="precio..."
+              data-precio
+            />
+            <input
+              type="url"
+              class="input-producto"
+              placeholder="imagen..."
+              data-imagen
+            />
+          </div>
+          <input class="button button-1" type="submit" value="Enviar" />
+          <input class="button button-2" type="button" value="Limpiar" />
+        </form>
+      </section>
+    </main>
+    <!--!Footer-->
+    <footer class="container">
+      <div class="container-alura">
+        <img src="./img/image 1.png" alt="hearts" />
+        <h1 class="titulo">AluraGeek</h1>
+      </div>
+      <div class="texto-footer">
+        <h4>Desarrollado por Florencia Ortega</h4>
+        <p>Alura Latam - 2024</p>
+      </div>
+    </footer>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/mostrar-productos.js" type="module"></script>
+    <script src="./js/crear-producto.js" type="module"></script>
+  </body>
+</html>

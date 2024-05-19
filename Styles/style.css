@@ -1,0 +1,150 @@
+:root{
+    --morado: #8C0375;
+    --morado-2: #C004D9;
+    --morado-3: #9303A6; 
+    --violeta: #5D04D9;
+    --azul: #03318C;
+}
+
+
+*{
+    font-family: "Silkscreen", "Press Start 2P";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*!Header & Footer*/
+.container{
+    background-color: var(--violeta);
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    font-size: .7rem;
+    letter-spacing: .08rem;
+}
+
+.container img{
+    width: 6rem;
+}
+.container-alura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*!Grid main*/
+.grid-container {
+    display: grid;
+    grid: 450px / 50% 30% ;
+    grid-gap: 13rem;
+    padding: 30px;
+}
+
+.grid-container > .grid {
+    background-color: #b17dff39;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .titulo-productos{
+    font-size: 23px;
+  }
+  /*!Formulario*/
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.input-producto{
+    border: 2.5px solid var(--azul);
+    border-radius: 25px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 7px;
+}
+
+::placeholder {
+    font-family: system-ui;
+    color: var(--azul);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.button{
+    font-family: system-ui;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: .5rem 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 2.5px solid var(--azul);
+}
+
+.button-1{
+    background-color: var(--azul);
+    color: white;
+}
+.button-2{
+    color: var(--azul);
+}
+
+/*!Footer*/
+.texto-footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+/*!HOVER*/
+
+.button-1:hover{
+    background-color: var(--azul);
+    color: white;
+}
+.button-2:hover{
+    color: var(--azul);
+}
+
+/*!PRUEBAS*/
+
+
+.videos__item {
+    flex-grow: 1;
+    height: 10rem;
+    width: 10rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.imagen-producto{
+    height: 10rem;
+    width: 95%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.descripcion-producto{
+    font-size: 12px;
+    color: white;
+    padding-top: 5px;
+}
+
+.descripcion-video{
+    background: var(--violeta);
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+
+
