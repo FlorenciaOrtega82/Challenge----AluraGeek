@@ -4,20 +4,20 @@ const lista = document.querySelector("[data-lista]");
 
 export default function crearCard(nombre, precio, imagen) {
   const producto = document.createElement("li");
-  producto.className = "videos__item";
+  producto.className = "container-producto  ";
   producto.innerHTML = `
-    <div class="descripcion-video">
+  <div class="descripcion-producto ">
         <img class="imagen-producto" src="${imagen}" />
-        <h5 class="descripcion-producto">${nombre}</h5>
-        <p class="descripcion-producto"> $${precio}</p>
+        <h5 class="nombre-producto">${nombre}</h5>
+        <p class="precio-producto"> $${precio}</p>
     </div> `;
 
   return producto;
 }
 
-async function listarVideos() {
+async function listarProductos() {
   try {
-    const listaAPI = await main.listarVideos();
+    const listaAPI = await main.listarProductos();
 
     listaAPI.forEach((producto) =>
       lista.appendChild(
@@ -29,4 +29,4 @@ async function listarVideos() {
   }
 }
 
-listarVideos();
+listarProductos();

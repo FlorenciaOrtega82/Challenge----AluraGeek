@@ -27,7 +27,7 @@
     <main class="container-main grid-container">
       <section class="container-productos grid">
         <h2 class="titulo-productos">Mis productos:</h2>
-        <ul class="container-productos" alt="Productos" data-lista></ul>
+        <ul class="container-productos layout" alt="Productos" data-lista></ul>
       </section>
 
       <!--*Right "Agregar productos"-->
@@ -40,18 +40,21 @@
               class="input-producto"
               placeholder="nombre..."
               data-nombre
+              required
             />
             <input
               type="number"
               class="input-producto"
               placeholder="precio..."
               data-precio
+              required
             />
             <input
               type="url"
               class="input-producto"
               placeholder="imagen..."
               data-imagen
+              required
             />
           </div>
           <input class="button button-1" type="submit" value="Enviar" />

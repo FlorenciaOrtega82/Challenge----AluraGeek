@@ -1,10 +1,10 @@
-async function listarVideos() {
+async function listarProductos() {
   const conexion = await fetch("http://localhost:5500/productos");
   const conexionConvertida = await conexion.json();
   return conexionConvertida;
 }
 
-async function enviarVideo(nombre, precio, imagen) {
+async function enviarProducto(nombre, precio, imagen) {
   const conexion = await fetch("http://localhost:5500/productos", {
     method: "POST",
     headers: {
@@ -26,6 +26,6 @@ async function enviarVideo(nombre, precio, imagen) {
 }
 
 export const main = {
-  listarVideos,
-  enviarVideo,
+  listarProductos,
+  enviarProducto,
 };
