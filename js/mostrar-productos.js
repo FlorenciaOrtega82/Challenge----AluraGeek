@@ -10,6 +10,7 @@ export default function crearCard(nombre, precio, imagen) {
         <img class="imagen-producto" src="${imagen}" />
         <h5 class="nombre-producto">${nombre}</h5>
         <p class="precio-producto"> $${precio}</p>
+        <img class="trash-icon" src="./img/trash-icon.svg">
     </div> `;
 
   return producto;
