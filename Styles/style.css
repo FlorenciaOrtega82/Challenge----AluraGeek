@@ -175,6 +175,9 @@
 /*!ICONO*/
 
 .trash-icon {
-  padding-left: 4.5rem;
   cursor: pointer;
+}
+.icono-borrar {
+  background-color: #03318c00;
+  border: none;
 }

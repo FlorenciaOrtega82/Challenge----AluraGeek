@@ -2,31 +2,31 @@
   "productos": [
     {
       "id": 1,
-      "nombre": "Stormtrooper",
+      "nombre": "Stormtrooper 1",
       "precio": "60,00",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
     {
       "id": 2,
-      "nombre": "Game Boy",
+      "nombre": "Stormtrooper 2",
       "precio": "60,00",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZLh8eA-ULLaGGNo0tacIVY2WXTKoC0diJZvH5H7zAw&s"
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
     {
       "id": 3,
-      "nombre": "Stormtrooper",
+      "nombre": "Stormtrooper 3",
       "precio": "60,00",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
     {
       "id": 4,
-      "nombre": "Stormtrooper",
+      "nombre": "Stormtrooper 4",
       "precio": "60,00",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
     {
       "id": 5,
-      "nombre": "Stormtrooper",
+      "nombre": "Stormtrooper 5",
       "precio": "60,00",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
@@ -55,7 +55,7 @@
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGm4F51RA-0vQ9Ss3Z8JmcehcqawFK2FGXpl0JkWbDyQ&s"
     },
     {
-      "id": "7695",
+      "id": 10,
       "nombre": "PlayStation 1",
       "precio": "30",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH406j2OXceYJKpzmibwEq7lRalvGXYwkHDA&s"

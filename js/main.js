@@ -1,31 +1,43 @@
+const url = await fetch("http://localhost:5500/productos");
+
 async function listarProductos() {
-  const conexion = await fetch("http://localhost:5500/productos");
-  const conexionConvertida = await conexion.json();
+  const conexionConvertida = await url.json();
   return conexionConvertida;
 }
 
-async function enviarProducto(nombre, precio, imagen) {
-  const conexion = await fetch("http://localhost:5500/productos", {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json",
-    },
-    body: JSON.stringify({
-      nombre: nombre,
-      precio: precio,
-      imagen: imagen,
-    }),
-  });
+async function enviarProducto(nombre, precio, imagen, id) {
+  url,
+    {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        nombre: nombre,
+        precio: precio,
+        imagen: imagen,
+        id: id,
+      }),
+    };
 
-  const conexionConvertida = conexion.json();
+  const conexionConvertida = url.json();
 
-  if (!conexion.ok) {
+  if (!url.ok) {
     throw new Error("Ha ocurrido un error al enviar el producto");
   }
   return conexionConvertida;
 }
 
+const deleteProduct = (id) => {
+  return fetch(`${url}/${id}`, {
+    method: "DELETE",
+  })
+    .then((res) => res.json())
+    .catch((error) => console.log(error));
+};
+
 export const main = {
   listarProductos,
   enviarProducto,
+  deleteProduct,
 };
