@@ -1,5 +1,5 @@
 import { main } from "./main.js";
-
+/*TODO Arreglar error de muestra de productos  */
 const lista = document.querySelector("[data-lista]");
 
 export default function crearCard(nombre, precio, imagen, id) {
