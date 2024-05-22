@@ -1,5 +1,5 @@
 import { main } from "./main.js";
-/*TODO Arreglar error de muestra de productos  */
+
 const lista = document.querySelector("[data-lista]");
 
 export default function crearCard(nombre, precio, imagen, id) {
@@ -21,7 +21,7 @@ export default function crearCard(nombre, precio, imagen, id) {
   const deleteButton = producto.querySelector(".icono-borrar");
   deleteButton.addEventListener("click", () => {
     main
-      .deleteProduct(id + 1)
+      .deleteProduct(id)
       .then(() => {
         producto.remove();
       })
@@ -33,7 +33,7 @@ export default function crearCard(nombre, precio, imagen, id) {
 
 async function listarProductos() {
   try {
-    const listaAPI = await main.enviarProducto();
+    const listaAPI = await main.listarProductos();
 
     listaAPI.forEach((producto) =>
       lista.appendChild(
