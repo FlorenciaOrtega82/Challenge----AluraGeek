@@ -1,5 +1,5 @@
 //const url = await fetch("http://localhost:5500/productos");
-const url = "http://localhost:5500/productos/";
+const url = "https://challenge-alura-geek-two.vercel.app/productos/";
 
 async function listarProductos() {
   const response = await fetch(url);
