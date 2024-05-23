@@ -31,7 +31,7 @@ async function enviarProducto(nombre, precio, imagen, id) {
   return productoCreado;
 }
 
-const deleteProduct = async (id) => {
+const eliminarProducto = async (id) => {
   const response = await fetch(`${url}${id}`, {
     method: "DELETE",
   });
@@ -48,7 +48,7 @@ const deleteProduct = async (id) => {
 export const main = {
   listarProductos,
   enviarProducto,
-  deleteProduct,
+  eliminarProducto,
 };
 
 /*---------------

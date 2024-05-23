@@ -18,10 +18,10 @@ export default function crearCard(nombre, precio, imagen, id) {
 
     </div> `;
 
-  const deleteButton = producto.querySelector(".icono-borrar");
-  deleteButton.addEventListener("click", () => {
+  const eliminarBoton = producto.querySelector(".icono-borrar");
+  eliminarBoton.addEventListener("click", () => {
     main
-      .deleteProduct(id)
+      .eliminarProducto(id)
       .then(() => {
         producto.remove();
       })
