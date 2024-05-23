@@ -28,6 +28,12 @@ export default function crearCard(nombre, precio, imagen, id) {
       .catch((error) => console.log(error));
   });
 
+  try {
+    lista.appendChild(producto);
+  } catch (error) {
+    console.error("Error al agregar el producto a la lista:", error);
+  }
+
   return producto;
 }
 

@@ -1,5 +1,5 @@
 //const url = await fetch("http://localhost:5500/productos");
-const url = "http://localhost:5500/productos/";
+const url = "http://localhost:5500/productos";
 
 async function listarProductos() {
   const response = await fetch(url);
@@ -32,7 +32,7 @@ async function enviarProducto(nombre, precio, imagen, id) {
 }
 
 const eliminarProducto = async (id) => {
-  const response = await fetch(`${url}${id}`, {
+  const response = await fetch(`${url}/${id}`, {
     method: "DELETE",
   });
   if (!response.ok) {
