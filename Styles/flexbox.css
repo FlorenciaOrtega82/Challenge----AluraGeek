@@ -1,0 +1,97 @@
+/* Tablets y phablets */
+@media (min-width: 576px) and (max-width: 900px) {
+  .container-productos {
+    background-color: rgb(159, 64, 64);
+    padding-left: 10%;
+    grid-row-start: 2;
+  }
+
+  .grid {
+    grid-auto-rows: 200px;
+  }
+  .grid-container {
+    display: grid;
+    grid: 450px / 70%;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .container-formulario {
+    padding-top: 0;
+  }
+  .container-producto {
+    font-size: 12px;
+    color: white;
+
+    background: var(--violeta);
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 8rem;
+    height: auto;
+  }
+
+  .layout {
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    width: auto;
+    height: 90%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 5fr);
+    gap: 10px 10px;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+/* Teléfonos */
+@media (max-width: 575px) {
+  .container-productos {
+    background-color: rgb(159, 64, 64);
+    padding-left: 10%;
+    grid-row-start: 2;
+  }
+
+  .grid {
+    grid-auto-rows: 200px;
+  }
+  .grid-container {
+    display: grid;
+    grid: 450px / 70%;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .container-formulario {
+    padding-top: 0;
+  }
+  .container-producto {
+    font-size: 12px;
+    color: white;
+
+    background: var(--violeta);
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 8rem;
+    height: auto;
+  }
+
+  .layout {
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    width: auto;
+    height: 90%;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 5fr);
+    gap: 10px 10px;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+}

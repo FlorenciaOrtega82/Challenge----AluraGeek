@@ -36,7 +36,7 @@
 .grid-container {
   display: grid;
   grid: 450px / 50% 30%;
-  grid-gap: 13rem;
+  grid-gap: 10rem;
   padding: 30px;
 }
 
@@ -114,7 +114,7 @@
   background-color: #d1d1d1;
 }
 
-/*!PRUEBAS*/
+/*!LAYOUT DE PRODUCTOS*/
 
 .layout {
   font-family: system-ui;
@@ -134,7 +134,7 @@
   flex-grow: 1;
   padding: 1rem;
   list-style-type: none;
-  padding-left: 4rem;
+  padding-left: 2rem;
 }
 
 .container-producto {
@@ -172,7 +172,7 @@
   padding-bottom: 0;
 }
 
-/*!ICONO*/
+/*!ICONO ELIMINAR PRODUCTO*/
 
 .trash-icon {
   cursor: pointer;
